@@ -1,0 +1,131 @@
+ class Student{
+    int rollno;
+    long phoneno;
+   String name;
+    String address;
+
+
+ 
+ Student(int rollno,long phoneno,String name,String address ){
+    this.rollno=rollno;
+    this.phoneno=phoneno;
+    this.name=name;
+    this.address=address;
+ }
+ 
+  void display(){
+    System.out.println("the roll:"+rollno);
+    System.out.println("phoneno"+phoneno);
+    System.out.println("name"+name);
+
+    System.out.println("Address"+address);
+
+
+  }
+  }
+  public class stu{
+    public static void main(String args[]){
+        Student st1=new Student(1,908765,"John","jaipur");
+        st1.display();
+
+        Student st2=new Student (2,9736368,"Sam","jaipur");
+        st2.display();
+        
+    }
+  }
+2.
+class calculator{
+    int a=10;
+    int n=20;
+
+    calculator(){
+
+    }
+    int add(int a ,int b){
+      return a+b;
+     
+    }
+    void multiply(int a,int b){
+        int multiply=a*b;
+        System.out.println(multiply);
+
+    }
+
+}
+public class cal{
+    public static void main(String args[]){
+        calculator cal1=new calculator();
+        System.out.println(cal1.add(10,20));
+        cal1.multiply(10,20);
+        
+    }
+}
+3.
+class MyClass {
+    int value;
+
+   
+   public MyClass() {
+       value = 0;
+   }
+
+   // Parameterized constructor
+   public MyClass(int val) {
+       value = val;
+   }
+
+   // Method to display the value
+   public void display() {
+       System.out.println("Value: " + value);
+   }
+
+   // Overloaded method to display the sum of two values
+   public void display(int num1, int num2) {
+       System.out.println("Sum: " + (num1 + num2));
+   }
+
+   // Overloaded method to display the product of two values
+   public void display(double num1, double num2) {
+       System.out.println("Product: " + (num1 * num2));
+   }
+}
+
+public class overloading_eg {
+   public static void main(String[] args) {
+       // Using constructors
+       MyClass obj1 = new MyClass(); 
+       MyClass obj2 = new MyClass(4); 
+
+       // Using methods
+       obj1.display(); 
+       obj2.display(); 
+       obj1.display(3, 2); 
+       obj2.display(2.5, 7.9);
+   }
+}
+4.
+class bird{
+     String p;
+     String pig;
+     
+    bird(String p){
+        this.p=p;
+       
+
+    }
+    void displayname(){
+        System.out.println(p);
+
+        
+    }
+}
+public class bi{
+    public static void main(String args[]){
+        bird b1=new bird("peaconk");
+        bird b2=new bird("pigeon");
+        b1.displayname();
+        b2.displayname();
+
+
+    }
+}
